@@ -177,6 +177,12 @@
             padding: 8px;
             border-radius: 5px;
             background: rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        .april-day {
+            background: rgba(200, 200, 255, 0.15);
+            color: #aaa;
         }
         
         .holiday {
@@ -371,11 +377,11 @@
                 </div>
             </div>
             
-            <!-- Календарь мая 2026 -->
+            <!-- Календарь мая 2026 с 30 апреля -->
             <div class="calendar-container">
-                <h3>Май 2026 - Праздничные и выходные дни</h3>
+                <h3>Апрель-Май 2026 - Праздничные и выходные дни</h3>
                 <div class="calendar">
-                    <div class="calendar-header">Май 2026</div>
+                    <div class="calendar-header">Апрель-Май 2026</div>
                     <div class="weekday">Пн</div>
                     <div class="weekday">Вт</div>
                     <div class="weekday">Ср</div>
@@ -384,11 +390,8 @@
                     <div class="weekday">Сб</div>
                     <div class="weekday">Вс</div>
                     
-                    <!-- Пустые дни перед 1 мая (четверг) -->
-                    <div class="day"></div>
-                    <div class="day"></div>
-                    <div class="day"></div>
-                    <div class="day"></div>
+                    <!-- 30 апреля (пятница) - сокращенный день -->
+                    <div class="day april-day short-day">30</div>
                     
                     <!-- 1-3 мая - праздничные дни -->
                     <div class="day holiday">1</div>
@@ -431,8 +434,8 @@
                     <div class="day">28</div>
                     <div class="day">29</div>
                     
-                    <!-- 30-31 мая - сокращенный и выходной -->
-                    <div class="day short-day">30</div>
+                    <!-- 30-31 мая - праздничные дни -->
+                    <div class="day holiday">30</div>
                     <div class="day holiday">31</div>
                 </div>
                 
@@ -440,6 +443,10 @@
                     <div class="legend-item">
                         <div class="legend-color" style="background-color: rgba(76, 175, 80, 0.3);"></div>
                         <span>Выходные и праздничные дни</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: rgba(200, 200, 255, 0.15);"></div>
+                        <span>Апрельские дни</span>
                     </div>
                     <div class="legend-item">
                         <div class="legend-color" style="background-color: rgba(255, 165, 0, 0.3);"></div>
